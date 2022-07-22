@@ -1,0 +1,50 @@
+body{
+    background-image: url(/public/assets/img/atm-1524871_1920.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+#header{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: #2C3639;
+    color: #DCD7C9;
+    min-height: 10vh;
+    font-size: 30px;
+}
+#transferForm{
+    width: 20vw;
+    margin-left: 40vw;
+    height: 20vw;
+    margin-top: 10vh;
+    background-color: #DCD7C9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+input, span, button {
+    padding: 10px;
+    gap: 10px;
+    border-radius: 5px;
+    font-size: 20px; 
+    width: 15vw; 
+}
+footer{
+    bottom: 0;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: #2C3639;
+    color: #DCD7C9;
+    min-height: 10vh;
+    font-size: 30px;
+}
+footer button{
+    transform: translate(20%,40%)
+}

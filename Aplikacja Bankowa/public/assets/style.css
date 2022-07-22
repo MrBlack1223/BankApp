@@ -1,0 +1,131 @@
+body{
+    background-image: url('img/money-1632055_1920.jpg');
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: #2C3639;
+    color: #DCD7C9;
+}
+#mainSection{
+    position: relative;
+    border:1px solid black;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 25vw;
+    background-color:#DCD7C9 ;
+    opacity: 0.8;
+}
+
+#balance{
+    width: 50vw;
+    height: 20vh;
+    color:#DCD7C9;
+    background-color: #2C3639;
+    font-size: 40px;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 1vh;
+    border-radius: 0px 0px 50% 50% ;
+    z-index: 10;
+}
+#withdraws{
+    width:25vw;
+    float:left;
+    height: fit-content; 
+}
+#deposits{
+    float:left;
+    width: 25vw;
+    height: fit-content;
+}
+#transactions{
+    width: 50vw;
+    float: right;
+    height: fit-content;
+}
+.withdraw{
+    list-style-type: none;
+    max-height: 25vh;
+    overflow:scroll;
+}
+.withdraw::-webkit-scrollbar {
+    width: 5px;
+    height: 0;
+    border-radius: 50%;
+}
+                    
+.withdraw::-webkit-scrollbar-track {
+    background: #DCD7C9;;
+}
+                    
+.withdraw::-webkit-scrollbar-thumb {
+    background: #333; 
+}
+
+#lastTransactions{
+    width: 50vw;
+    min-height: 70vh;
+    height: fit-content;
+    background-color: #DCD7C9;
+    font-size: 40px;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 1vh;
+    top:10vh;
+    z-index: 0;
+}
+#navBar{
+    float:left;
+    width:24vw;
+    position: absolute;
+    gap: 5vh;
+    top:10vh;
+}
+#optionList li,#BankMembersSection li{
+    margin-top: 10vh;
+    list-style-type:none;
+    
+}
+#optionList li button{
+    width:10vw;
+    height: 10vh;
+    font-size: 24px;
+    border-radius: 10px;
+    transition: 0.5s all;
+}
+#optionList li button:hover{
+    background-color: #2C3639;
+    cursor: pointer;
+    color: #DCD7C9;
+}
+#BankMembersSection{
+    float:right;
+    width:24vw;
+    position: absolute;
+    gap: 5vh;
+    top:15vh;
+    left:75vw;
+    
+    
+}
+#bankMembers{
+    text-align: center;
+    font-size: 24px;
+    font-family: sans-serif;
+    overflow:scroll;
+    height:70vh;
+}
+#bankMembers::-webkit-scrollbar{
+    height: 0px;
+    width: 10px;
+}
+#bankMembers::-webkit-scrollbar-track {
+    background: #DCD7C9;;
+}
+                    
+#bankMembers::-webkit-scrollbar-thumb {
+    background: #333; 
+}

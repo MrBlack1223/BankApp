@@ -1,0 +1,82 @@
+body{
+    font-family: sans-serif;
+    background-image: url('img/money-2724235_1920.jpg');
+    background-size: cover;
+}
+#header{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: #2C3639;
+    color: #DCD7C9;
+}
+#header img {
+    position: absolute;
+    width: 50px;
+    height:50px;
+    left:1vw;
+    top:1vh;
+}
+#header span {
+    position: absolute;
+    left:0.3vw;
+    top:6vh;
+}
+
+a:visited{
+    color:#DCD7C9;
+}
+a{
+    color:#d3d3d3;
+}
+#registration__form{
+
+    margin-left: 30vw;
+    background-color: #FFE3A9;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+    font-family: sans-serif;
+    width: 40vw;
+    height: 50vh;
+    margin-top: 5vh;
+    opacity: 0.85;
+    transition: 0.5s;
+}
+#registration__form:hover{
+    opacity: 1;
+}
+#registrationSubmitButton{
+    transition: 1s;
+}
+#registrationSubmitButton:hover{
+    background-color: #d3d3d3;
+}
+#registrationSubmitButton,input, span {
+    padding: 10px;
+    gap: 10px;
+    border-radius: 5px;
+    font-size: 20px; 
+    width: 20vw; 
+}
+footer{
+    text-align: center;
+    margin-top: 25vh;
+    font-size: 5px;
+}
+@media only screen and (min-width: 1200px) {
+    #registration__form{ 
+        margin-left: 40vw;
+        width: 20vw;
+    }
+    #registrationSubmitButton, input, span {
+         
+        width: 15vw; 
+    }
+}

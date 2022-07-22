@@ -1,0 +1,83 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/public/assets/style.css" rel="stylesheet"  type="text/css">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <h1 id="headerMessage">Witaj <%= name %> </h1>
+    </header>
+    <section id="mainSection">
+        <div id="balance">Saldo twojego konta: <br> <br> <%= balance %> zł</div>
+        <div id="lastTransactions">
+            <div id="withdraws"> Wypłaty
+                <ul class = "withdraw">
+                    <% for(var i=0; i<withdrawHistory.length; i++) { %>
+                        <li>
+                            <%= withdrawHistory[i].by  %> zł
+                        </li>
+                    <% } %>
+                </ul>
+            </div>
+            <div id="deposits"> Wpłaty
+                <ul class = "withdraw">
+                    <% for(var i=0; i<depositHistory.length; i++) { %>
+                        <li>
+                            <%=depositHistory[i].by  %> zł
+                        </li>
+                    <% } %>
+                </ul>
+            </div>
+            <div id="transactions"> Przelewy
+                <ul class = "withdraw">
+                    <% for(var i=0; i<transferHistory.length; i++) { %>
+                        <li>
+                             <%= transferHistory[i].taken  ?  transferHistory[i].by : -1 *transferHistory[i].by %> zł 
+                             <%= transferHistory[i].taken  ? "od":"do" %> <%= transferHistory[i].from %>
+                        </li>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+        
+    </section>
+    <nav id="navBar">
+        <div id="options">
+            <ul id="optionList">
+                <li>
+                    <form action="/transfer" method="get">
+                        <button type="submit">Zrób przelew</button>
+                    </form>
+                </li>
+                <li>
+                    <form action="/Withdraw" method="get">
+                        <button type="submit">Wypłać pieniądze</button>
+                    </form>
+                </li>
+                <li>
+                    <form action="/deposit" method="get">
+                        <button type="submit">Wpłać pieniądze</button>
+                    </form>
+                </li>
+                <li>
+                    <form action="/logout?_method=DELETE" method="POST">
+                        <button type="submit">Wyloguj się</button>
+                  </form>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="BankMembersSection">
+        <div id="bankMembers">Inni kilenci naszego banku: 
+            <% for(var i=0; i<allUsers.length; i++) { %>
+                <li>
+                     <%= allUsers[i].email %> 
+                </li>
+            <% } %>
+        </div>
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,78 @@
+body{
+    background-image: url('img/pile-163497.jpg');
+}
+header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: #2C3639;
+    color: #DCD7C9;
+}
+#logging__form{
+
+    margin-left: 30vw;
+    background-color: #FFE3A9;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+    font-family: sans-serif;
+    height: 50vh;
+    width: 40vw;
+    margin-top: 10vh;
+    opacity: 0.85;
+    height:60vh;
+}
+#logging__form::before{
+    content: "";
+    margin: 5px;
+    background-image: url(img/computer-science-1331579_640.png);
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+#logging__form:hover{
+    opacity: 1;
+}
+#loginSubmitbutton, input, span {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px; 
+    width: 20vw; 
+    opacity: 1;
+}
+
+span{
+    text-align: center;
+}
+#error{
+    text-align: center;
+    min-width: 20vw;
+    font-family: sans-serif;
+}
+
+@media only screen and (min-width: 900px) {
+    #loginSubmitbutton, input, span {
+        width: 15vw; 
+    }
+    #logging__form{ 
+        margin-left: 35vw;
+        width: 30vw;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    #loginSubmitbutton, input, span {
+        width: 12vw; 
+    }
+    #logging__form{ 
+        margin-left: 40vw;
+        width: 20vw;
+    }
+}

@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/assets/login.css">
+    <script src="/public/scripts/login.js" async></script> 
+    <title>Log into your Bank account</title>
+</head>
+<header>
+    <h1>Witaj w aplikacji bankowej </h1>
+</header>
+
+<form action="/login" method="POST" id="logging__form">
+<div id="error">
+    <% if(messages.error){%>
+    <%= messages.error %>
+    <% } %>
+</div>
+  <div id="email__input" >
+    <input type="email" id="email" name="email" placeholder="email" required>
+  </div>
+  <div id="passowrd__input">
+    <input type="password" id="password" name="password" placeholder="Haslo" required>
+  </div>
+  <button type="submit" id="loginSubmitbutton">Login</button>
+  <span>lub<a href="/register"> Zarejestruj się</a></span>
+</form>

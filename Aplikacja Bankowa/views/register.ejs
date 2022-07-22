@@ -1,0 +1,30 @@
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="/public/assets/registration.css">
+      <title>registration to your bank</title>
+</head>
+<body>
+    <header id="header">
+        <a href="/login">
+            <img src="/public/assets/img/arrow-31218_640.png" alt="go to login screen" srcset="">
+            <span>zaloguj się</span>
+        </a>
+      <h1>Zarejestruj się</h1>
+    </header>
+    <form action="/register" method="POST" id="registration__form">
+        <%= errorMessage %>
+        <input type="text"  placeholder="Imię" id="nameINP" name="name" required >
+        <input type="text"  placeholder="Nazwisko" id="lastNameINP" name="surname"required>
+        <input type="email" id="emailInp" placeholder="Podaj email" name="email" required>
+        <input type="password" id="passwordInp" placeholder="Podaj hasło" name="password" required>
+        <button type="submit" id="registrationSubmitButton" >Zarejestruj się</button>
+    </form>
+    <footer>
+        <span>Klikając przycisk Zarejestruj się, akceptujesz nasz Regulamin.
+         Zasady dotyczące danych informują, w jaki sposób gromadzimy, użytkujemy i udostępniamy dane użytkowników,
+         a Zasady dotyczące plików cookie informują jak korzystamy z plików cookie i podobnych technologii.
+        </span>
+    </footer>
+</body>

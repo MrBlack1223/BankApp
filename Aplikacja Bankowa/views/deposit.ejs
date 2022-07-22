@@ -1,0 +1,21 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/public/assets/deposit.css" rel="stylesheet"  type="text/css">
+    <title>Wpłać pieniądze</title>
+</head>
+<body>
+    <header id="header"> Wpłać pieniądze </header>
+    <form action="/deposit" method="post" id="depositForm">
+        <span> Podaj ilość pieniędzy do wpłaty <br></span>
+        <%= errorMessage %>
+        <input type="text"  placeholder="Ile?" id="depositAmount" name="deposit" required >
+        <button type="submit" id="depositSubmit" >Wpłać</button>
+    </form>
+    <footer>
+        <form action="/" method="get">
+            <button type="submit">Powrót do strony głównej</button>
+        </form>
+    </footer>
+</body>

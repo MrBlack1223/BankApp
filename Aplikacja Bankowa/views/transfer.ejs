@@ -1,0 +1,22 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/public/assets/transfer.css" rel="stylesheet"  type="text/css">
+    <title>Zrób przelew</title>
+</head>
+<body>
+    <header id="header"> Wypłać przelej </header>
+    <form action="/transfer" method="post" id="transferForm">
+        <span> Podaj ilość pieniędzy do przelania <br></span>
+        <%= errorMsg %>
+        <input type="text"  placeholder="Ile?" id="transferInp" name="transfer" required >
+        <input type="email"  placeholder="Do kogo(email)" id="emailInp" name="email" required >
+        <button type="submit" id="transferSubmit" >Przelej pieniądze</button>
+    </form>
+    <footer>
+        <form action="/" method="get">
+            <button type="submit">Powrót do strony głównej</button>
+        </form>
+    </footer>
+</body>
